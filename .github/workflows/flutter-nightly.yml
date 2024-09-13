@@ -1,4 +1,4 @@
-name: Nightly Build
+name: Flutter Nightly Build
 
 jobs:
   run-flutter-nightly-build:
