@@ -105,15 +105,15 @@ const CHARS: &[char] = &[
 ];
 
 pub const RENDEZVOUS_SERVERS: &[&str] = &["r.eramicro.com:11116"];
-pub const PUBLIC_RS_PUB_KEY: &str = "";
+pub const PUBLIC_RS_PUB_KEY: &str = "key.icucloud.vip";
 
 pub const RS_PUB_KEY: &str = match option_env!("RS_PUB_KEY") {
     Some(key) if !key.is_empty() => key,
     _ => PUBLIC_RS_PUB_KEY,
 };
 
-pub const RENDEZVOUS_PORT: i32 = 21116;
-pub const RELAY_PORT: i32 = 21117;
+pub const RENDEZVOUS_PORT: i32 = 11116;
+pub const RELAY_PORT: i32 = 11117;
 
 macro_rules! serde_field_string {
     ($default_func:ident, $de_func:ident, $default_expr:expr) => {
